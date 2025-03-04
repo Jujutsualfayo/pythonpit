@@ -1,12 +1,4 @@
-secret_number = 9
-guess_count = 0
-guess_limit = 3
-while guess_count < guess_limit:
-    guess = int(input("guess: "))
-    guess_count += 1
-    if guess == secret_number:
-        print("You got it!")
-        break
-else:
-    print("Sorry its wrong")
-
+numbers = [1,2,3,4,5]
+output = 'x'
+for output in numbers:
+    print("x")
