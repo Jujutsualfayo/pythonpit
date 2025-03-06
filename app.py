@@ -1,6 +1,5 @@
-user = input("Input: ")
-while user == "exit":
-    print("Success")
-    break
-while user != "exit":
-    continue
+while True:
+    user = input("Input: ")
+    if user == "exit":
+        print("success")
+        break
