@@ -1,6 +1,5 @@
-
-while True:
-    guess = int(input("Guess: "))
-    if guess == 5:
-        print("Correct")
-        break
+a = 0
+b = 1
+while a <= 50:
+    print(a, end="  ")
+    a, b = b, a + b
