@@ -1,5 +1,6 @@
-x = 10
-while x >= 1:
-    print(x)
-    x -= 1
-    
+user = input("Input: ")
+while user == "exit":
+    print("Success")
+    break
+while user != "exit":
+    continue
