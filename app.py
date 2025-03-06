@@ -1,6 +1,6 @@
-total = 0
-number = 1
-while number <= 100:
-    total += number
-    number += 1
-print(total)
+
+while True:
+    guess = int(input("Guess: "))
+    if guess == 5:
+        print("Correct")
+        break
