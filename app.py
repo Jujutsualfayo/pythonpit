@@ -1,7 +1,6 @@
-i = 1
-while i <=10:
-    if i == 5:
-        continue
-    print(i)
-    i += 1
+numbers = 1
+while numbers <= 20:
+    numbers % 2 == 0
+    print(numbers)
+    numbers += 1
     
