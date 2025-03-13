@@ -1,8 +1,3 @@
-person = {"name": "Alice", "age": 25, "city": "New York"}
-person ["age"] = 30
-person ["job"] = "engineer"
-print(person.get("job"))
-if "salary" in person:
-    print("Exists")
-else:
-    print("Does not exists")
+student = {"age":"25", "nationality":"Kenya", "job":"Software Engineer", "religion":"Christian"}
+for key, value in student.items():
+    print(f"{key}: {value}")
