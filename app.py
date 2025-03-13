@@ -1,6 +1,8 @@
-student = {"age":"25", "weight":"50kg", "school":"Alliance school"}
-print(student.get("age"))
-student["age"] = 26
-print(student.get("age"))
-if "age" in student:
+person = {"name": "Alice", "age": 25, "city": "New York"}
+person ["age"] = 30
+person ["job"] = "engineer"
+print(person.get("job"))
+if "salary" in person:
     print("Exists")
+else:
+    print("Does not exists")
