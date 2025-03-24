@@ -1,4 +1,5 @@
-import sys
+num = int(input("Input A no: "))
+num1 =int(input("Input B no: "))
 
-sys.stderr.write("and that piece of art is useful - Dora Korpar, 2015-10-19\n")
-sys.exit(1)
+def magic_calculation(a, b):
+    return(98 + a** b)
