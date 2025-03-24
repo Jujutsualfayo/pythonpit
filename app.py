@@ -1,1 +1,1 @@
-import this
+help("modules")
