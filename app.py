@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 import random
-number = random.randint(-10, 10)
-if number > 0:
-    print("Is positive")
-elif number == 0:
-    print("is zero")
-else:
-    print("is negative")
+number = random.randint(-10000, 10000)
+if number > 5:
+    print(f"the last digit of {number}, is ")
