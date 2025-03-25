@@ -1,2 +1,3 @@
-for i in range(99):
-    print("{:02d}".format(i), end=", " if i < 99 else "\n")
+for i in range(10):
+    for j in range(i + 1, i):
+        print("{:d}{:d}".format(i, j), end="" if i != 8 or j !=9 else "\n")
