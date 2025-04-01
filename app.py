@@ -1,7 +1,4 @@
-#!/usr/bin/python3
-import random
-number = random.randint(-10000, 10000)
-last = number % 10
-if number < 0:
-    last = -(-number % 10)
-print(f"Last digit of {number} is {last}")
+for i in range(97,123):
+    if i == 101 or i == 113:
+        continue
+    print(chr(i), end =" ")
