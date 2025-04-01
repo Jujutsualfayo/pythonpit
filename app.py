@@ -1,4 +1,3 @@
-for i in range(97,123):
-    if i == 101 or i == 113:
-        continue
-    print(chr(i), end =" ")
+for i in range(0,98):
+    print(f"{i} = 0x {i:x}")
+    
