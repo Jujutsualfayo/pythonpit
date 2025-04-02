@@ -1,2 +1,2 @@
-for i in range(0,99):
-    print(f"{i:02d}", end =", ") if i < 99 else "\n"
+for num in range(0, 99):
+    print(f"{num:02d}",  end= ", " if num < 99 else "\n")
