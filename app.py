@@ -1,13 +1,11 @@
-def add(a, b):
-    sum = a + b
-    print(sum, end="")
-    return sum
-
+def pow(a, b):
+    value = a ** b
+    print(value, end="")
+    return value
 a = int(input("insert: "))
 b = int(input("insert: "))
-add(a, b)
+pow(a, b)
 print()
-
 
 
 
