@@ -1,3 +1,5 @@
-for i in range(10):
-    for j in range(i + 1, 10):
-        print(f"{i}{j}", end= " ") if i != 8 or j != 9 else "\n"
+def uppercase(str):
+    for c in str:
+        uppercase_char = chr(ord(c) -32) if "a" <= c <= "z" else c
+        print(uppercase_char, end="")
+    print()
