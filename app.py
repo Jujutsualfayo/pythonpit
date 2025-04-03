@@ -1,9 +1,9 @@
-def add(a, b):
-    sum = a + b
-    print(sum, end="")
-    return sum
+def pow(a, b):
+    value = a ** b
+    print(value, end="")
+    return value
 
-a = int(input("Insert: "))
-b = int(input("Insert: "))
-add(a, b)
+a = int(input("Insert A: "))
+b = int(input("Insert B: "))
+pow(a, b)
 print()
