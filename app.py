@@ -1,11 +1,7 @@
-def pow(a, b):
-    value = a ** b
-    print(value, end="")
-    return value
-a = int(input("insert: "))
-b = int(input("insert: "))
-pow(a, b)
-print()
+def uppercase(str):
+    for c in str:
+        uppercase_char = chr(ord(c) -32) if "a" <= c <= "z" else c
+        print(uppercase_char, end="")
 
 
 
