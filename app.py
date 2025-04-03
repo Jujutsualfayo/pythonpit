@@ -1,7 +1,13 @@
-def uppercase(str):
-    for c in str:
-        uppercase_char = chr(ord(c) -32) if "a" <= c <= "z" else c
-        print(uppercase_char, end="")
+def print_last_digit(number):
+    last_digit =  number % 10
+    print(last_digit, end="")
+    return last_digit
+
+number = int(input("Insert: "))
+print_last_digit(number)
+print()
+
+
 
 
 
