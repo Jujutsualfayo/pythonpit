@@ -1,13 +1,9 @@
-def print_last_digit(number):
-    last_digit =  number % 10
-    print(last_digit, end="")
-    return last_digit
+def add(a, b):
+    sum = a + b
+    print(sum, end="")
+    return sum
 
-number = int(input("Insert: "))
-print_last_digit(number)
+a = int(input("Insert: "))
+b = int(input("Insert: "))
+add(a, b)
 print()
-
-
-
-
-
