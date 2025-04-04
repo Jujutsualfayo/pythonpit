@@ -1,5 +1,2 @@
-def add(a, b):
-    return a + b
-
-if __name__ == "__main__":
-    print("Success! ")
+x = [1,2,3,4,5]
+print(dir(x))
