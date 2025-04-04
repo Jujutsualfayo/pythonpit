@@ -1,2 +1,5 @@
-from utils import greet
-print(greet("Alfayo"))
+def add(a, b):
+    return a + b
+
+if __name__ == "__main__":
+    print("Success! ")
