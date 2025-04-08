@@ -1,4 +1,2 @@
-squares = [1,2,3,4,5]
-print(squares[1])
-
-          
+a = [1,2,3,4,5]
+len(a)
