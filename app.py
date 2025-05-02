@@ -1,10 +1,10 @@
-#!/usr/bin/python3
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-for row in matrix:
-    for col in row:
-        print("{:d}".format(col), end=" " if col != row[-1] else "")
-    print()
+def safe_print_list(my_list=[], x=0):
+    count = 0
+    try:
+        for i in range(x):
+            print(my_list[i], end="")
+            count += 1
+    except IndexError:
+     pass
+    return count
+    
