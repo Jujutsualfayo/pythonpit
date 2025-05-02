@@ -1,9 +1,16 @@
-class Person:
-    def __init__(self, name):
+class Dog:
+    species = "Cannis familiaris"
+
+    def __init__(self, name, age):
         self.name = name
+        self.age = age
+    
+print(Dog.species)
 
-    def say_hi(self):
-        print("Hello, my name is,", self.name)
+dog1 = Dog("Buddy", 2)
+dog2 = Dog("Bruno", 3)
 
-p = Person("Joy")
-p.say_hi()
+print(dog1.name)
+print(dog2.name)
+print(dog1.age)
+print(dog2.age)
