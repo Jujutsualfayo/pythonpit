@@ -12,5 +12,3 @@ dog2 = Dog("Bruno", 3)
 
 print(dog1.name)
 print(dog2.name)
-print(dog1.age)
-print(dog2.age)
