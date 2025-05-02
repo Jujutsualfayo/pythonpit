@@ -1,5 +1,7 @@
 class Person:
-    pass
+    def say_hi(self):
+        print("Hello, Otieno")
 
 p = Person()
-print(p)
+p.say_hi()
+
