@@ -6,13 +6,13 @@ class Square:
             raise ValueError("Value must be more than zero")
         self.__size = size
 
-    def get_size(self):
-        return self.__size
+    def area(self):
+        return self.__size ** 2
     
-sq1 = Square(11)
-sq2 = Square (56)
+sq1 = Square(4)
+sq2 = Square (8)
 
-print("Size of sq1 is", sq1.get_size())
-print("Size of sq2 is", sq2.get_size())
+print("Area of sq1 is", sq1.area())
+print("Area of sq2 is", sq2.area())
 
     
