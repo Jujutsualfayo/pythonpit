@@ -1,18 +1,16 @@
 class Square:
     def __init__(self, size=0):
-        if not isinstance(size, int):
-            raise TypeError("Size must be an integer")
-        if size < 0:
-            raise ValueError("Value must be more than zero")
-        self.__size = size
+        self.size = size
 
-    def area(self):
-        return self.__size ** 2
+    @property
+    def size(self):
+        return self.__size
     
-sq1 = Square(4)
-sq2 = Square (8)
-
-print("Area of sq1 is", sq1.area())
-print("Area of sq2 is", sq2.area())
-
-    
+    @size.setter
+    def size(self, value):
+        if not isinstance(value, int):
+            raise TypeError("must be an integer")
+        if value < 0:
+            raise ValueError("must be more than 0")
+        self.__size = value
+        
