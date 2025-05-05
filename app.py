@@ -9,10 +9,10 @@ class Square:
     def get_size(self):
         return self.__size
     
-sq1 = Square()
+sq1 = Square(11)
 sq2 = Square (56)
 
-print("Size of sq1 is", sq1.get_size)
-print("Size of sq2 is", sq2.get_size)
+print("Size of sq1 is", sq1.get_size())
+print("Size of sq2 is", sq2.get_size())
 
     
