@@ -11,7 +11,7 @@ class Rectangle:
     def width(self, value):
         if not isinstance(value, int):
             raise TypeError("must be an integer")
-        if ValueError < 0:
+        if value < 0:
             raise ValueError("must be more than 0")
         self.__width = value
 
@@ -23,7 +23,14 @@ class Rectangle:
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("must be an integer")
-        if ValueError < 0:
+        if value < 0:
             raise ValueError("must be more than 0")
         self.__height = value
     
+    def area(self):
+        a = self.__height * self.__width
+        return a
+    def perimeter(self):
+        if self.__width or self.__height == 0:
+            print("perimeter is 0")
+            
