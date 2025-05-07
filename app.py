@@ -4,4 +4,4 @@ def magic_string(_count=[0]):
 
 
 for i in range(10):
-    
+    print(magic_string())
