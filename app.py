@@ -3,4 +3,4 @@ for item in items:
     try:
         print(len(item))
     except TypeError:
-        print("Item has no length", item)
+        print("Item has no length:", item)
