@@ -1,8 +1,11 @@
 class Rectangle:
+    number_of_instances = 0
+    print_symbol = "#"
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-        Rectangle.number_of_instances += 1
+        number_of_instances += 1
 
     @property
     def width(self):
@@ -11,9 +14,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
-            raise TypeError("must be an integer")
+            raise TypeError("Must be an integer")
         if value < 0:
-            raise ValueError("must be more than 0")
+            raise ValueError("Must be above zero")
         self.__width = value
 
     @property
@@ -23,34 +26,28 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("must be an integer")
+            raise TypeError("Must be an integer")
         if value < 0:
-            raise ValueError("must be more than 0")
+            raise ValueError("Must be above zero")
         self.__height = value
-    
+
     def area(self):
-        a = self.__height * self.__width
-        return a
+        return self.width * self.height
+    
     def perimeter(self):
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return 0
-        return 2 * (self.__height + self.__width)
+        return 2 * (self.width + self.height)
     
     def __str__(self):
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return ""
-        return "\n".join(["#" * self.__width for _ in range (self.__height)])
+        row = str(self.print_symbol) * self.width
+        return "\n".join([row for _ in range(self.height)])
     
     def __repr__(self):
-        return f"Rectangle ({self.__width}, {self.__height})"
+        return f"Rectangle({self.width}, {self.height})"
     
     def __del__(self):
+        print("Bye dear rectangle...")
         Rectangle.number_of_instances -= 1
-        print("Bye rectangle##")
-
-    
-
-
-#test object 
-r = Rectangle(5,4)
-del r
