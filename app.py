@@ -1,7 +1,9 @@
-def magic_string(_count=[0]):
-    _count[0] += 1
-    return ", ".join(["Best School"] * _count[0])
+class Parent:
+    def greet(self):
+        print("Hello from your parent")
+class Child(Parent):
+    pass
 
+c = Child()
+c.greet()
 
-for i in range(10):
-    print(magic_string())
