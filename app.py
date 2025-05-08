@@ -1,4 +1,4 @@
-def write_file(filename="", text=""):
-    with open(filename, "w", encoding= "utf-8") as f:
-        print(f.write(text))
+def append_write(filename="", text=""):
+    with open(filename, "a", encoding= "utf-8") as f:
+        return f.append(text)
 
