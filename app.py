@@ -1,6 +1,4 @@
-import json
-
-data = {"Name": "Mitchel Maina", "School": "Mary Hill", "Age": 24}
-with open("data.json" "w") as f:
-    json.dump(data, f)
+def read_file(filename=""):
+    with open(filename, "r", encoding="utf-8") as f:
+        print(f.read(), end="")
 
