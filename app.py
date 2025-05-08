@@ -1,16 +1,15 @@
-class A:
-    def hello(self):
-        print("A")
+class Base():
+    """ My base class """
 
-class B(A):
-    def hello(self):
-        print("B")
-class C(A):
-    def hello(self):
-        print("C")
-class D(B, C):
-        pass
+    __nb_instances = 0
 
-d = D()
-d.hello()
-print(D.__mro__)
+    def __init__(self):
+        Base.__nb_instances += 1
+        self.id = Base.__nb_instances
+
+class User(Base):
+    """ My User class """
+    pass
+
+u = User()
+print(u.id)
