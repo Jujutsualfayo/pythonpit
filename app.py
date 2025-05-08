@@ -1,10 +1,15 @@
-class Parent:
-    def greet(self):
-        print("Hello from your parent")
-class Child(Parent):
-    def greet(self):
-        print("Hello from child")
+class A:
+    def hello(self):
+        print("A")
 
-c = Child()
-c.greet()
+class B(A):
+    def hello(self):
+        print("B")
+class C(A):
+    def hello(self):
+        print("C")
+class D(B, C):
+        pass
 
+d = D()
+d.hello()
