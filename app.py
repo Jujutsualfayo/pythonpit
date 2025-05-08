@@ -1,5 +1,5 @@
 import json
 
-data = {"Name": "Benjamin", "Age" : 24, "Nationality": "Kenyan"}
-json_string = json.dumps(data)
-print(json_string)
+json_data = {"Name": "khafafa", "Age": 23, "Game": "Football"}
+data = json.loads(json_data)
+print(data)
