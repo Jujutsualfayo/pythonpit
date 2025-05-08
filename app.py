@@ -1,11 +1,5 @@
-class Person:
-    def __init__(self, name):
-        self.name = name
-    def greet(self):
-        return f"Hello my name is {self.name}"
-def lookup(obj):
-        return dir(obj)
-    
-p =Person("Alfayo")
+import json
 
-print(lookup(p))
+data = {"Name": "Benjamin", "Age" : 24, "Nationality": "Kenyan"}
+json_string = json.dumps(data)
+print(json_string)
