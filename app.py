@@ -13,3 +13,4 @@ class D(B, C):
 
 d = D()
 d.hello()
+print(D.__mro__)
