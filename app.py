@@ -1,4 +1,3 @@
-def append_write(filename="", text=""):
-    with open(filename, "a", encoding= "utf-8") as f:
-        return f.append(text)
-
+import json
+def to_json_string(my_obj):
+    return json.dumps(my_obj)
