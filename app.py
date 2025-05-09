@@ -3,3 +3,4 @@ def greet_all(*names):
         print(f"Hello, {name}")
 
 greet_all = ("Benjamin", "Joy", "Chemu")
+print(greet_all)
