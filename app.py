@@ -1,3 +1,4 @@
 import json
-def from_json_string(my_str):
-    return json.load(my_str)
+def save_to_json_file(my_obj, filename):
+    with open(filename, "w") as f:
+        json.dumps(my_obj, f)
