@@ -1,6 +1,4 @@
-def greet_all(*names):
-    for name in names:
-        print(f"Hello, {name}")
-
-greet_all = ("Benjamin", "Joy", "Chemu")
-print(greet_all)
+def read_file(filename=""):
+    with open(filename, "r", encoding="utf-8") as f:
+        print(f.read(), end="")
+    
