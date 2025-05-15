@@ -26,16 +26,9 @@ The console interprets user commands to create, retrieve, update, and destroy in
    cd AirBnB_clone
 
    Run the console:
-
-bash
-Copy
-Edit
 ./console.py
 Or if not executable:
 
-bash
-Copy
-Edit
 python3 console.py
 💡 How to Use It
 Once started, the console allows you to enter commands to interact with the backend models. It supports both standard and advanced command syntax.
@@ -64,9 +57,7 @@ You can also use the dot notation:
 <class name>.update(<id>, <dictionary>)
 
 ✅ Examples
-bash
-Copy
-Edit
+
 (hbnb) create User
 <uuid>
 
