@@ -4,34 +4,14 @@ class Square(Rectangle):
         self.size = size
         self.x = x
         self.y = y
-        super().__init__(self)
+        super().__init__(size, size, x, y, id)
         @property
         def size(self):
-            return self.__size
+            return self.width
         @size.setter
         def size(self, value):
-            if not isinstance(value, int):
-                raise TypeError("Value must be an integer")
-            if value < 0:
-                raise ValueError("Value must be more than 0")
-            self.size = value
-            @property
-            def x(self):
-                return self.__x
-            @x.setter
-            def x(self, value):
-                if not isinstance(value, int):
-                    raise TypeError("Value must be an integer")
-                if value < 0:
-                    raise ValueError("Value must be more than 0")
-                self.x = value
-            @property
-            def y(self):
-                return self.__y
-            @y.setter
-            def y(self, value):
-                if not isinstance(value, int):
-                    raise TypeError("Value must be an integer")
-                if value < 0:
-                    raise ValueError("Value must be more than 0")
-                self.y = value
+            self.width = value
+            self.height = value
+        def __str__(self):
+            return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+        
