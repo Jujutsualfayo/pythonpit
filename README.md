@@ -1,2 +1,3 @@
-# pythonpit
-Python programming  core
+Airbnb clone project by:
+Benjamin Alfayo <benjaminalfayo90@gmail.com>
+github <@Jujutsualfayo>
