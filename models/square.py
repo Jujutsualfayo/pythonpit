@@ -18,10 +18,10 @@ class Square(Rectangle):
             attrs = ["id", "size", "x", "y"]
             if args and len(args) > 0:
                 for i, arg in enumerate(args):
-                    if i < 0:
+                    if i < len(attrs):
                         setattr(self, attrs[i], arg)
                 else:
                     for key, value in kwargs.items():
-                        if hasattr(self, value):
-                                   setattr(self, value, key)
+                        if hasattr(self, key):
+                                   setattr(self, key, value)
         
