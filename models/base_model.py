@@ -10,3 +10,7 @@ class BaseModel:
     def __str__(self):
         '''Return the f string representation'''
         return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+    def save(self):
+        '''Updates the updated_at to current dattime'''
+        self.updated_at = datetime.now()
+    
