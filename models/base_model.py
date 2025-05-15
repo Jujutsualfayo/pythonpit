@@ -20,6 +20,10 @@ class BaseModel:
       def to_dict(self):
          result = self.__dict__.copy()
          result["created_at"] = self.created_at.isoformat()
-         
+         result["updated_at"] = self.updated_at.isoformat()
+         result["__class__"] = self.__class__.__name__
+         return result
+
+
       
     
