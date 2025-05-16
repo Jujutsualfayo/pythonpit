@@ -8,6 +8,18 @@ class BaseModel:
         self.updated_at = self.created_at
     '''create an f str formation of the my BaseModel'''
     def __str__(self):
+        return f"[{self.__class.__name__}] ({self.id}) {self.__dict__}"
+    """updates the public instance attribute updated_at with the current datetime"""
+    def save(self):
+        self.updated_at = datetime.now()
+    """ returns a dictionary containing all keys/values of __dict__ of the instance"""
+    def to_dict(self):
+        result = self.__dict__.copy()
+        result["created_at"] = self.created_at.isoformat()
+        result["updated_at"] = self.updated_at.isoformat()
+        result["__class__"] = self.__class__.name__
+        return result
+
         
    
 
