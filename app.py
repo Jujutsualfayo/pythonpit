@@ -1,13 +1,8 @@
 import cmd
-
-class HelloWorld(cmd.Cmd):
-    """Simple command processor example."""
-    
-    def do_greet(self, line):
-        print("Hello")
-    
-    def do_EOF(self, line):
+class HelloWorld(cmd.Cmdgreet):
+    def greet(self, line):
+        print("Hello Benjamin")
+    def EoF(self, line):
         return True
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     HelloWorld().cmdloop()
