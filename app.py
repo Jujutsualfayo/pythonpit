@@ -1,5 +1,5 @@
 import cmd
-class HelloWorld(cmd.Cmdgreet):
+class HelloWorld(cmd.Cmd):
     def greet(self, line):
         print("Hello Benjamin")
     def EoF(self, line):
