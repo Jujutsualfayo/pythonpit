@@ -1,24 +1,13 @@
-class Student:
-    def __init__(self, name, age, cohort, grade):
-        self.name = name
-        self.age = age
-        self.cohort = cohort
-        self.grade = grade
+import cmd
 
-    def __str__(self):
-        return(
-            f"Name: {self.name}\nAge: {self.age}"
-            f"Cohort: {self.cohort}\nGrade: {self.grade}"
-        )
-    def grading_hist(self, your_grad, option="Next class"):
-        self.grade = 75
-        if self.grade > your_grad:
-            print(" You have not met the threshhold mark")
+class HelloWorld(cmd.Cmd):
+    """Simple command processor example."""
+    
+    def do_greet(self, line):
+        print "hello"
+    
+    def do_EOF(self, line):
+        return True
 
-        return(
-           print(f"Hello {self.name}\nYour score is {your_grad}\n"), 
-           print(f"You pass to the {option}")
-        )
-student_1 = Student("Francis Nyatundo", 24, 22, 85)
-student_1.grading_hist(90)
-print(student_1.grading_hist)
+if __name__ == '__main__':
+    HelloWorld().cmdloop()
