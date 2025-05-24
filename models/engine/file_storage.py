@@ -6,3 +6,6 @@ class FileStorage: # file that handles serialization/deserialization of BaseMode
     __objects = {}
     def all(self): # returns all the dictionaries objects
         return FileStorage.__objects
+    def new(self, obj): # sets in __objects the obj with key <obj class name>.id
+        key = f"{obj.__class.__name__}.{obj.id}"
+        FileStorage.__objects[key] = obj
