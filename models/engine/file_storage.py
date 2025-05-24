@@ -9,3 +9,9 @@ class FileStorage: # file that handles serialization/deserialization of BaseMode
     def new(self, obj): # sets in __objects the obj with key <obj class name>.id
         key = f"{obj.__class.__name__}.{obj.id}"
         FileStorage.__objects[key] = obj
+    def save(self): #serializes the method to dict then to json
+        json_objects = {
+            key:obj.to_dict() for key, obj in FileStorage.__objects.items()
+        }
+        with open(FileStorage.__file_path, "w") as f:
+            json.dump(json_objects, f)
