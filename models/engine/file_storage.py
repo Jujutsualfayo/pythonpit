@@ -15,3 +15,5 @@ class FileStorage: # file that handles serialization/deserialization of BaseMode
         }
         with open(FileStorage.__file_path, "w") as f:
             json.dump(json_objects, f)
+    def reload(self):
+        
