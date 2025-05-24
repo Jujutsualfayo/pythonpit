@@ -2,7 +2,7 @@ import uuid
 from datetime import datetime
 
 class BaseModel:
-    def __init__(self, *args, **kwargs):# str repr of uuidand updated timestamps, adds features for adding key word arguments
+    def __init__(self, *args, **kwargs):# str repr of uuid and updated timestamps, adds features for adding key word arguments
         if kwargs:
             for key, value in kwargs.items():
                 if key == "created_at" or key == "updated_at":
