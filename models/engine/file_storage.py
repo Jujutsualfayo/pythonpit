@@ -16,4 +16,10 @@ class FileStorage: # file that handles serialization/deserialization of BaseMode
         with open(FileStorage.__file_path, "w") as f:
             json.dump(json_objects, f)
     def reload(self):
-        
+        """Deserializes the JSON file to __objects (if file exists)."""
+        if exists(FileStorage.__file_path):
+            from models.base_model import BaseModel
+            with open(FileStorage.__file_path, 'r') as f:
+                loaded_objects = json.load(f)
+                for key, obj_dict in loaded_objects.items():
+                    FileStorage.__objects[key] = BaseModel(**obj_dict)
