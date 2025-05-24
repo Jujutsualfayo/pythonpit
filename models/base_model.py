@@ -10,7 +10,9 @@ class BaseModel: #initialize and assign unique id and upd with current datetimes
         return (
             f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
         )
-    
+    def save(self): # updates the  updated at with the current datetime
+        self.updated_at = datetime.now()
+        
 
 
 
